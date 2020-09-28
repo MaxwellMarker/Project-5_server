@@ -19,8 +19,8 @@ db.on("open", () => {
 })
 
 // Middleware
-
-
+app.use(cors());
+app.use(express.json());
 
 // Controllers
 
