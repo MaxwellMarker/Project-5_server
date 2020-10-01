@@ -7,7 +7,6 @@ const GameSchema = new Schema(
         releaseYear: { type: Number, required: true },
         description: { type: String, required: true },
         img: { type: String},
-        reviews: [{ type: Schema.Types.ObjectId, ref: "Review" }],
         platforms: {type: Array},
         genres: {type: Array},
         publishers: {type: Array},
