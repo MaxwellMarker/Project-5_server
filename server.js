@@ -19,11 +19,11 @@ db.on("open", () => {
 })
 
 // Middleware
-
-
+app.use(cors());
+app.use(express.json());
 
 // Controllers
-
+app.use('/games', require('./controllers/games'));
 
 
 // Listener
