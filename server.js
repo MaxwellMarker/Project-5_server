@@ -25,6 +25,7 @@ app.use(express.json());
 // Controllers
 app.use('/games', require('./controllers/games'));
 
+app.use('/reviews', require('./controllers/reviews'));
 
 // Listener
 app.listen(PORT, () => {
