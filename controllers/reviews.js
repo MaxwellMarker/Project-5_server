@@ -18,6 +18,7 @@ router.get('/:gameId', (req, res) => {
         if(error){
             res.status(500).json(error)
         }else{
+            reviews.sort((a, b) => {return Date.parse(b.createdAt) - Date.parse(a.createdAt)})
             res.status(200).json(reviews);
         }
     })
