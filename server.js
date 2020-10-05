@@ -27,6 +27,8 @@ app.use('/games', require('./controllers/games'));
 
 app.use('/reviews', require('./controllers/reviews'));
 
+app.use('/requests', require('./controllers/requests'));
+
 // Listener
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
