@@ -24,6 +24,17 @@ router.get('/:id', (req, res) => {
     })
 })
 
+// Update rating
+router.put('/:id', (req, res) => {
+    console.log(req.body)
+    Game.findByIdAndUpdate(req.params.id, {rating: req.body.rating}, (error, game) => {
+        if(error){
+            console.log(error)
+        }else{
+            console.log(game);
+        }
+    })
+})
 // Make a game
 router.post('/', (req, res) => {
     console.log(req.body);

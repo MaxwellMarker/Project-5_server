@@ -10,7 +10,8 @@ const GameSchema = new Schema(
         platforms: {type: Array},
         genres: {type: Array},
         publishers: {type: Array},
-        developers: {type: Array}
+        developers: {type: Array},
+        rating: {type: Number, default: 0}
     },
     { timestamps: true }
 );
